@@ -5,7 +5,7 @@
   <arg name="vehicle_model" default="sample_vehicle" description="vehicle model name"/>
   <arg name="sensor_model" default="sample_sensor_kit" description="sensor model name"/>
   <arg name="pointcloud_container_name" default="pointcloud_container"/>
-  <arg name="data_path" default="$(env HOME)/autoware_data" description="packages data and artifacts directory path"/>
+  <arg name="data_path" default="/opt/autoware_data" description="packages data and artifacts directory path"/>
 
   <!-- launch module preset -->
   <arg name="planning_module_preset" default="default" description="planning module preset"/>
@@ -70,7 +70,9 @@
       <arg name="sensor_model" value="$(var sensor_model)"/>
       <arg name="vehicle_id" value="$(var vehicle_id)"/>
       <arg name="launch_vehicle_interface" value="$(var launch_vehicle_interface)"/>
+      <!--
       <arg name="config_dir" value="$(find-pkg-share individual_params)/config/$(var vehicle_id)/$(var sensor_model)"/>
+      -->	      
       <arg name="raw_vehicle_cmd_converter_param_path" value="$(find-pkg-share autoware_launch)/config/vehicle/raw_vehicle_cmd_converter/raw_vehicle_cmd_converter.param.yaml"/>
     </include>
   </group>
