@@ -25,6 +25,9 @@
     <arg name="data_path" value="$(var data_path)"/>
     <arg name="use_low_height_cropbox" value="false"/>
 
+    <!-- disable lidar centerpoint functionality -->
+    <arg name="lidar_detection_model" value="disable"/>
+
     <!-- object recognition -->
     <arg
       name="object_recognition_detection_euclidean_cluster_param_path"
