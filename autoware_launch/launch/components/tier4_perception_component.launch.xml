@@ -43,19 +43,12 @@
     <arg name="objects_validation_method" value="$(var detected_objects_validation_method)"/>
     <arg name="data_path" value="$(var data_path)"/>
 
-<<<<<<< HEAD
-    <!-- disable lidar centerpoint functionality -->
-    <arg name="lidar_detection_model" value="disable"/>
-
-    <!-- object recognition -->
-=======
     <arg name="use_traffic_light_recognition" value="$(var use_traffic_light_recognition)"/>
     <arg name="traffic_light_recognition/enable_fine_detection" value="$(var traffic_light_recognition/enable_fine_detection)"/>
     <arg name="traffic_light_recognition/fusion_only" value="false"/>
     <arg name="traffic_light_image_number" value="2"/>
 
     <!-- object recognition parameters -->
->>>>>>> 94a7ab6
     <arg
       name="object_recognition_detection_euclidean_cluster_param_path"
       value="$(find-pkg-share autoware_launch)/config/perception/object_recognition/detection/clustering/euclidean_cluster.param.yaml"
@@ -189,16 +182,7 @@
     <arg name="occupancy_grid_map_param_path" value="$(find-pkg-share autoware_launch)/config/perception/occupancy_grid_map/$(var occupancy_grid_map_method).param.yaml"/>
     <arg name="occupancy_grid_map_updater_param_path" value="$(find-pkg-share autoware_launch)/config/perception/occupancy_grid_map/$(var occupancy_grid_map_updater)_updater.param.yaml"/>
 
-<<<<<<< HEAD
-    <!-- traffic light recognition -->
-    <arg name="use_traffic_light_recognition" value="false"/>
-    <arg name="traffic_light_recognition/enable_fine_detection" value="$(var traffic_light_recognition/enable_fine_detection)"/>
-    <arg name="traffic_light_recognition/fusion_only" value="false"/>
-    <arg name="traffic_light_image_number" value="1"/>
-
-=======
     <!-- traffic light recognition parameters -->
->>>>>>> 94a7ab6
     <arg name="traffic_light_arbiter_param_path" value="$(find-pkg-share autoware_launch)/config/perception/traffic_light_arbiter/traffic_light_arbiter.param.yaml"/>
     <arg name="traffic_light_fine_detector_model_path" value="$(var data_path)/traffic_light_fine_detector"/>
     <arg name="traffic_light_fine_detector_model_name" value="tlr_car_ped_yolox_s_batch_6"/>
