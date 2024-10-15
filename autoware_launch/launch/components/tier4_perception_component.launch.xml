@@ -48,7 +48,7 @@
     <arg name="traffic_light_recognition/fusion_only" value="false"/>
     <arg name="traffic_light_image_number" value="2"/>
 
-    <!-- lidar centerpoint functionality -->
+    <!-- set lidar detection model -->
     <arg name="lidar_detection_model" value="$(env LIDAR_DETECTION_MODEL)"/>
 
     <!-- object recognition parameters -->
