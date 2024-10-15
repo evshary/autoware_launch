@@ -48,8 +48,8 @@
     <arg name="traffic_light_recognition/fusion_only" value="false"/>
     <arg name="traffic_light_image_number" value="2"/>
 
-    <!-- disable lidar centerpoint functionality -->
-    <arg name="lidar_detection_model" value="disable"/>
+    <!-- lidar centerpoint functionality -->
+    <arg name="lidar_detection_model" value="$(env LIDAR_DETECTION_MODEL)"/>
 
     <!-- object recognition parameters -->
     <arg
