@@ -50,6 +50,7 @@
 
     <!-- set lidar detection model -->
     <arg name="lidar_detection_model" value="$(env LIDAR_DETECTION_MODEL)"/>
+    <arg name="centerpoint_model_name" value="$(env CENTERPOINT_MODEL_NAME)"/>
 
     <!-- object recognition parameters -->
     <arg
