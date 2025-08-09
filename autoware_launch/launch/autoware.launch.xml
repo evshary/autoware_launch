@@ -105,6 +105,7 @@
       <arg name="data_path" value="$(var data_path)"/>
       <arg name="pointcloud_container_name" value="$(var pointcloud_container_name)"/>
       <arg name="use_traffic_light_recognition" value="$(var use_traffic_light_recognition)"/>
+      <arg name="lidar_detection_model" value="$(env LIDAR_DETECTION_MODEL)/$(env CENTERPOINT_MODEL_NAME)"/>
       <arg name="traffic_light_recognition/camera_namespaces" value="[traffic_light]"/>
     </include>
   </group>
